@@ -5,7 +5,10 @@
 </template>
 
 <script>
+import a from "axios";
 export default {
+  mounted() {},
+  methods: {},
   name: "App"
 };
 </script>

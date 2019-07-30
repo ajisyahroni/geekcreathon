@@ -37,19 +37,17 @@
 
       <v-spacer></v-spacer>
 
-      <v-menu offset-y>
+      <v-menu bottom left>
         <template v-slot:activator="{ on }">
-          <v-btn icon>
+          <v-btn dark icon v-on="on">
             <v-icon>mdi-dots-vertical</v-icon>
           </v-btn>
         </template>
+
         <v-list>
-          <v-list-tile @click="gotoExit()">
-            <v-list-tile-action>
-              <v-icon>exit_to_app</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-title>keluar</v-list-tile-title>
-          </v-list-tile>
+          <v-list-item @click="$router.push('/')">
+            <v-icon>mdi-dots-vertical</v-icon>Keluar
+          </v-list-item>
         </v-list>
       </v-menu>
     </v-app-bar>
