@@ -3,7 +3,13 @@
 </template>
 
 <script>
-export default {};
+import a from 'axios'
+export default {
+  methods:{
+    goLogin(){
+    }
+  }
+};
 </script>
 
 <style>
