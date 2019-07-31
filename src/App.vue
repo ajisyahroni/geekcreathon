@@ -22,6 +22,9 @@ import a from "axios";
 export default {
   mounted() {},
   methods: {},
-  name: "App"
+  name: "App",
+  created() {
+    window.getApp = this;
+  },
 };
 </script>

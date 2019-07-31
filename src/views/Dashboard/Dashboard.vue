@@ -1,4 +1,5 @@
 <template>
+<div>
   <v-simple-table>
     <thead>
       <tr>
@@ -16,14 +17,21 @@
         <td>{{ item.id }}</td>
         <td>{{ item.email }}</td>
         <td>{{ item.status }}</td>
-        <td><v-btn dark>Update Data</v-btn></td>
+        <td><v-btn dark @click="gotoUpdate()">Update Data</v-btn></td>
       </tr>
     </tbody>
   </v-simple-table>
+  
+</div>
 </template>
 
 <script>
   export default {
+      methods: {
+    gotoUpdate() {
+      this.$router.push("/navigation/update");
+    },
+      },
     data () {
       return {
         track: [
@@ -37,5 +45,6 @@
         ],
       }
     },
+
   }
 </script>

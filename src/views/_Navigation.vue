@@ -7,16 +7,16 @@
             <v-icon>mdi-home</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
+            <v-list-item-title>Dashboard</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item @click="gotoHistory()">
           <v-list-item-action>
-            <v-icon>mdi-camera-plus</v-icon>
+            <v-icon>event</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Contact</v-list-item-title>
+            <v-list-item-title>history</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 

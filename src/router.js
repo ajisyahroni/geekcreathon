@@ -11,6 +11,8 @@ import Register from './views/Before/Register.vue'
 import Dashboard from './views/Dashboard/Dashboard.vue'
 import History from './views/Dashboard/History.vue'
 
+import Update from './views/Dashboard/Update'
+
 
 Vue.use(Router)
 
@@ -37,6 +39,10 @@ export default new Router({
         {
           path: '/navigation/history',
           component: History
+        },
+        {
+          path: '/navigation/update',
+          component: Update
         },
       ]
     }
