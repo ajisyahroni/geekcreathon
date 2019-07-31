@@ -20,20 +20,13 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item>
-          <v-list-item-action>
-            <v-icon>mdi-camera-plus</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Contact</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+
       </v-list>
     </v-navigation-drawer>
 
     <v-app-bar app color="indigo" dark>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>EKSPEDISI APPS</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -53,8 +46,8 @@
     </v-app-bar>
 
     <v-content>
-      <v-container fluid fill-height>
-        <v-layout align-center justify-center>
+      <v-container>
+        <v-layout justify-center>
           <router-view />
         </v-layout>
       </v-container>

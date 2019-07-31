@@ -23,6 +23,10 @@ export default new Router({
       component: Login
     },
     {
+      path: '/reg',
+      component: Register
+    },
+    {
       path: '/navigation',
       component: Navigation,
       children: [
